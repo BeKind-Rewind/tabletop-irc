@@ -1,4 +1,3 @@
-const { INT24, NULL } = require('mysql2/lib/constants/types.js');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -13,7 +12,7 @@ Category.init(
       primaryKey: true,
       autoIncrement: true
     },
-    catergory_name: {
+    category_name: {
       type: DataTypes.STRING,
       allowNull: false
     }
